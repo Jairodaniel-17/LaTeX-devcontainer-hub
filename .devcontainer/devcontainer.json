@@ -38,5 +38,5 @@
         }
     },
     "remoteUser": "vscode",
-    "postCreateCommand": "mkdir -p out"
+    "postCreateCommand": "echo '✅ LaTeX DevContainer is ready to use for your project.'"
 }
