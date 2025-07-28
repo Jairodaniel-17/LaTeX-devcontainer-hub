@@ -37,9 +37,6 @@
             }
         }
     },
-    "containerEnv": {
-        "LANG": "es_ES.UTF-8"
-    },
     "remoteUser": "vscode",
     "postCreateCommand": "mkdir -p out"
 }
