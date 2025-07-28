@@ -1,0 +1,45 @@
+{
+    "name": "LaTeX DevContainer",
+    "image": "jairomt/latex-devcontainer:latest",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "James-Yu.latex-workshop",
+                "streetsidesoftware.code-spell-checker",
+                "editorconfig.editorconfig",
+                "ms-azuretools.vscode-docker"
+            ],
+            "settings": {
+                "latex-workshop.latex.autoBuild.run": "onSave",
+                "latex-workshop.latex.outDir": "out",
+                "latex-workshop.latex.clean.enabled": true,
+                "files.autoSave": "afterDelay",
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "files.exclude": {
+                    "**/*.aux": true,
+                    "**/*.bbl": true,
+                    "**/*.blg": true,
+                    "**/*.fdb_latexmk": true,
+                    "**/*.fls": true,
+                    "**/*.log": true,
+                    "**/*.out": true,
+                    "**/*.bcf": true,
+                    "**/*.lof": true,
+                    "**/*.lot": true,
+                    "**/*.run.xml": true,
+                    "**/*.toc": true,
+                    "**/*.snm": true,
+                    "**/*.nav": true,
+                    "**/*.loa": true,
+                    "**/*.synctex.gz": true,
+                    "**/*.synctex(busy)": true
+                }
+            }
+        }
+    },
+    "containerEnv": {
+        "LANG": "es_ES.UTF-8"
+    },
+    "remoteUser": "vscode",
+    "postCreateCommand": "mkdir -p out"
+}
